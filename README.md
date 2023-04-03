@@ -1,5 +1,5 @@
 # luhn-algorithm-card-number-validation-check
-basic luhn algorithm card number validation check. Grundlegende Luhn Algorithmus Validierung.
+basic luhn algorithm card number validation check. // Grundlegende Luhn Algorithmus Validierung.
 
 luhn algorithm = every second number from right gets multiplied by 2.
 if these numbers value is >=10  the checksum of the numbers is calculated.
