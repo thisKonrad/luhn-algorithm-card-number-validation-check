@@ -1,2 +1,4 @@
 # luhn-algorithm-card-number-validation-check
-luhn algorithm card number validation check. Luhn Algorithmus Validierung.
+basic luhn algorithm card number validation check. Grundlegende Luhn Algorithmus Validierung.
+
+
