@@ -1,6 +1,13 @@
 # luhn-algorithm-card-number-validation-check
 basic luhn algorithm card number validation check. // Grundlegende Luhn Algorithmus Validierung.
 
+function:
+
+=> .. insert a number and check out your console();
+
+
+about:
+
 luhn algorithm = every second number from right gets multiplied by 2.
 if these numbers value is >=10  the checksum of the numbers is calculated.
 after that you add all numbers again one by one and the result has to be an whole number 
