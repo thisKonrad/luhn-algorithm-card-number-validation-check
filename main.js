@@ -21,6 +21,7 @@ cardNumber.addEventListener('keypress',(e)=>{
     }
  });
  
+/* the collectible arrays */
 
 let firstOfR = [];
 
@@ -57,7 +58,7 @@ console.log('%c Total Validation Number: ' + numberForValidation, 'color:red')
 };
 
 
-/** get the numbers with a value >= 10 and calculate the checksum*/
+/* get the numbers with a value >= 10 and calculate the checksum */
 function checksumNumbers(){
 
 for( let value of secondOfR ){
@@ -67,17 +68,20 @@ if( value >= 10 ){
     let overTen = value;
     let sum = 0;
     
+     /* change the numbers to a string for the checksum calculation */
     let xSplit = overTen.toString();
 
     console.log('overTen values: ' + overTen)
     
     for( let i = 0; i < xSplit.length; i++){
 
+        /* rechange the strings to numbers and add the sum value */
         sum = sum + parseFloat(xSplit[i]);
 
         checksumArray.push(sum);
 
     }
+    /* push the values < 10 in to a other array */
     } else if ( value < 10) {
 
     let underTen = value;
@@ -94,7 +98,7 @@ function getNumbers(){
     /* get the input value */
     let n = cardNumber.value;
 
-    /* get the inputValue string.length to iterate correctly */
+    /* get the input value string.length to iterate correctly */
     let cardL= n.length;
 
     /* iterate rewards over n.length(cardL) and log every second index */
@@ -171,4 +175,4 @@ function getCheckNumberRight(x){
             console.log('sliced valid numbers for the checksum: '+ addTheChecksum);}
 }};
 
- 
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: that's it ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
